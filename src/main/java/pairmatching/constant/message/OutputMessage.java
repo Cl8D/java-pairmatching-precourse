@@ -1,26 +1,22 @@
 package pairmatching.constant.message;
 
-// separator
-public enum OutputMessage {
-    SEPARATOR("#############################################")
-    , COURSE_INFO("과정: %s | %s")
-    , MISSION("미션:\n" +
-            "  - %s: %s | %s | %s\n" +
-            "  - %s: %s | %s | %s\n" +
-            "  - %s: \n" +
-            "  - %s: %s | %s\n" +
-            "  - %s: ")
-    , MATCHING_RESULT("페어 매칭 결과입니다.")
-    , MATCHING_INFO("%s : %s")
-    ;
+import static pairmatching.domain.Course.BACKEND;
+import static pairmatching.domain.Course.FRONTEND;
+import static pairmatching.domain.Level.*;
 
-    private final String message;
+public class OutputMessage {
+    private final static String SEPARATOR = "#############################################\n";
+    private final static String COURSE = "과정: %s | %s\n`";
+    private final static String MISSION = "미션:\n";
 
-    OutputMessage(String message) {
-        this.message = message;
-    }
+    private final static String MATCHING_RESULT = "페어 매칭 결과입니다.";
 
-    public String getMessage() {
-        return message;
+    private final static String MATCHING_INFO = "%s : %s";
+
+    public String getOptionInfo() {
+        return SEPARATOR +
+                String.format(COURSE, BACKEND.getValue(), FRONTEND.getValue()) +
+                MISSION + LEVEL1 + LEVEL2 + LEVEL3 + LEVEL4 + LEVEL5 +
+                SEPARATOR;
     }
 }
