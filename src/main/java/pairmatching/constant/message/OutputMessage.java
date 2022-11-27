@@ -4,7 +4,7 @@ import static pairmatching.domain.Course.BACKEND;
 import static pairmatching.domain.Course.FRONTEND;
 import static pairmatching.domain.Level.*;
 
-public class OutputMessage {
+public final class OutputMessage {
     private final static String SEPARATOR = "#############################################\n";
     private final static String COURSE = "과정: %s | %s\n`";
     private final static String MISSION = "미션:\n";
@@ -13,7 +13,7 @@ public class OutputMessage {
 
     private final static String MATCHING_INFO = "%s : %s";
 
-    public String getOptionInfo() {
+    public static String getOptionInfo() {
         return SEPARATOR +
                 String.format(COURSE, BACKEND.getValue(), FRONTEND.getValue()) +
                 MISSION + LEVEL1 + LEVEL2 + LEVEL3 + LEVEL4 + LEVEL5 +
