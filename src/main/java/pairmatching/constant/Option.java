@@ -7,9 +7,9 @@ public enum Option {
     , QUIT("Q. 종료", "Q")
     ;
 
-    private String optionMsg;
+    private final String optionMsg;
 
-    private String optionNum;
+    private final String optionNum;
 
     Option(String optionMsg, String optionNum) {
         this.optionMsg = optionMsg;

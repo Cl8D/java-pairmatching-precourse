@@ -14,9 +14,13 @@ public enum OutputMessage {
     , MATCHING_INFO("%s : %s")
     ;
 
-    private String message;
+    private final String message;
 
     OutputMessage(String message) {
         this.message = message;
+    }
+
+    public String getMessage() {
+        return message;
     }
 }
