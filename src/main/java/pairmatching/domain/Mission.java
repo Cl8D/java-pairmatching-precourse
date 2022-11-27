@@ -1,6 +1,6 @@
 package pairmatching.domain;
 
-public enum Mission implements enumModel {
+public enum Mission implements EnumModel {
     CAR("자동차경주")
     , LOTTO("로또")
     , BASEBALL("숫자야구게임")

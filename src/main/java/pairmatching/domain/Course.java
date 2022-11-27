@@ -1,6 +1,6 @@
 package pairmatching.domain;
 
-public enum Course implements enumModel {
+public enum Course implements EnumModel {
     BACKEND("백엔드")
     , FRONTEND("프론트엔드")
     ;
