@@ -1,11 +1,9 @@
 package pairmatching.util;
 
-import pairmatching.constant.Option;
-
 import java.util.List;
 
 import static pairmatching.constant.Option.*;
-import static pairmatching.constant.message.ErrorMessage.WRONG_FUNCTION;
+import static pairmatching.constant.message.ExceptionMessage.WRONG_FUNCTION;
 
 public class InputValidation {
 
