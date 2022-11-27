@@ -49,4 +49,8 @@ public enum Level {
         this.message = message;
         this.missions = missions;
     }
+
+    public String getMessage() {
+        return message;
+    }
 }
