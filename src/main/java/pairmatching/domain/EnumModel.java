@@ -1,6 +1,6 @@
 package pairmatching.domain;
 
-public interface enumModel {
+public interface EnumModel {
     String getKey();
     String getValue();
 }
